@@ -20,7 +20,6 @@ int commandCount = 0;
   char* parseCommand (char* command){
         int size = strlen(command);
         char teste[size];
-        // strcpy(teste,command);
         int i = 0;
         char * aux;
         int flag = 0;
@@ -70,12 +69,8 @@ int main(int argc, char* argv[]){
 
 
         while((bytes_read = read(fd, buffer, MAX_LINE_SIZE)) > 0){
-			// write(outputFolder,buffer,bytes_read);
-			// write(outputFolder, "\n", 1);
-			// printf("[DEBUG] wrote %s to file \n", buffer);
+
             char *execute = "execute";
-            // printf ("%s blabla", buffer);
-            // printf ("strlen é %d\n", bufferSize);
             int i = 0;
             int j = 0;
             int l = 0;
